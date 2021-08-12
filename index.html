@@ -4,8 +4,8 @@
     	<title>LGTM</title>
         <meta name="viewport" content="width=device-width; height=device-height;">
         <meta content="LGTM" property="og:title" />
-        <meta content="https://raw.githubusercontent.com/GoodPro712/lgtm/main/lgtm_10.gif" property="og:description" />
-        <meta name="image" content="temp" property="og:image" />
+        <meta content="Looks good to me" property="og:description" />
+        <meta name="image" content="https://raw.githubusercontent.com/GoodPro712/lgtm/main/lgtm_10.gif" property="og:image" />
         <meta content="#F88379" data-react-helmet="true" name="theme-color" />
     </head>
     <body>
@@ -15,8 +15,8 @@
         var allMetaElements = document.getElementsByTagName('meta');
         var gifAmount = 10;
         var randomNumber = Math.floor(Math.random() * gifAmount) + 1;
-        var gifName = "lgtm_" + randomNumber + ".gif";
         var gifPath = "https://raw.githubusercontent.com/GoodPro712/lgtm/main/"
+        var gifName = "lgtm_" + randomNumber + ".gif";
         console.log(gifPath + gifName);
         
         for (var i = 0; i < allMetaElements.length; i++) { 
