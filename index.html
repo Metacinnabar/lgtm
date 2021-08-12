@@ -23,10 +23,10 @@
         console.log(gifPath + gifName);
         
         for (var i = 0; i < allMetaElements.length; i++) { 
-            console.log(allMetaElements[i].toString());
+            console.log(allMetaElements.toString());
             if (allMetaElements[i].getAttribute("property") == "og:image") {
                 allMetaElements[i].setAttribute("content", gifPath + gifName);
-                console.log("Successfully changed image attribute (" + allMetaElements[i].toString() + ")");
+                console.log("Successfully changed image attribute " + allMetaElements[i].toString());
                 break;
             }
         }
