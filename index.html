@@ -26,7 +26,7 @@
             console.log(allMetaElements[i].toString());
             if (allMetaElements[i].getAttribute("property") == "og:image") {
                 allMetaElements[i].setAttribute("content", gifPath + gifName);
-                console.log("Successfully changed image attribute (" + allMetaElements[i].toString()) + ")");
+                console.log("Successfully changed image attribute (" + allMetaElements[i].toString() + ")");
                 break;
             }
         }
