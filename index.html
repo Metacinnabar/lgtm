@@ -18,7 +18,7 @@
             var gifPath = "https://github.com/GoodPro712/lgtm/blob/main/"
             console.log(gifPath + gifName);
             
-            for (var index = 0; index < allMetaElements.length; index++) { 
+            for (var i = 0; i < allMetaElements.length; i++) { 
               if (allMetaElements[i].getAttribute("property") == "og:image") { 
                  allMetaElements[i].setAttribute('content', gifPath + gifName);
                  break;
