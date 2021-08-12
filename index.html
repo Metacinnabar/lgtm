@@ -8,19 +8,24 @@
         <meta content="#F88379" data-react-helmet="true" name="theme-color" />
     </head>
     <body>
+        <img id="lgtmimage" src="">
+        
         <script>
             var allMetaElements = document.getElementsByTagName('meta');
             var gifAmount = 10;
             var randomNumber = Math.floor(Math.random() * gifAmount) + 1;
             var gifName = "lgtm_" + randomNumber + ".gif";
             var gifPath = "https://github.com/GoodPro712/lgtm/blob/main/"
-
+            console.log(gifPath + gifName);
+            
             for (var index = 0; index < allMetaElements.length; index++) { 
               if (allMetaElements[i].getAttribute("property") == "og:image") { 
                  allMetaElements[i].setAttribute('content', gifPath + gifName);
                  break;
               }
             }
+
+            document.getElementById("lgtmimage").src = gifPath + gifName;
         </script>
     </body>
 </html>
